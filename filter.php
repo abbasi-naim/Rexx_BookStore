@@ -7,6 +7,16 @@
     <link rel="icon" type="image/png" href="/public/favicon.png">
     <title>My First PHP Code!</title>
 </head>
+<header>
+<nav class="navbar navbar-light" style="background-color: #c61c1d;">
+</nav>
+<div class="col-md-2 col-sm-12" style="margin-top: +20px;">
+<a href="https://www.rexx-systems.com/" class="logo">
+<img src="/public/logo.jpg">
+</a>
+</div>
+</header>
+
 <body>
     
 
