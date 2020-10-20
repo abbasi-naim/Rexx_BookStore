@@ -39,6 +39,32 @@
 <?php
 
 require_once("db.php");
+function filter($filter,$conn){
+    $price=0;
+    if(isset($_POST[$filter]) && $_POST[$filter]!="" ){
+
+        $sql = "SELECT * FROM `sale` WHERE `".$filter."` LIKE '%".mysqli_real_escape_string($conn,$_POST[$filter])."%'";
+        // echo $sql;
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+
+
+            while($row = $result->fetch_assoc()) {
+                echo '<tr><td>'.$row["customer_name"].'</td>';
+                echo '<td>'.$row["product_name"].'</td>';
+                $version=str_replace(".","",$row["version"]);
+                $version=str_replace("+","",$version);
+
+              
+                $price+=$row["product_price"];
+            }
+          echo '  <tr><td>Total Price<td>'.$price.'<td><td></tr>';
+        } else {
+            echo "0 results";
+        }
+    }
+}
 
 ?>
 
