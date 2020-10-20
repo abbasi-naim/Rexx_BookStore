@@ -63,7 +63,11 @@ function filter($filter,$conn){
                 $version=str_replace(".","",$row["version"]);
                 $version=str_replace("+","",$version);
 
-              
+                if($version < 101760){
+                    echo '<td>'.changeTime($row["sale_date"],"utc").'</td></tr>';
+                }else{
+                    echo '<td>'.changeTime($row["sale_date"],"Europe/Berlin").'</td></tr>';
+                }
                 $price+=$row["product_price"];
             }
           echo '  <tr><td>Total Price<td>'.$price.'<td><td></tr>';
