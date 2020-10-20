@@ -27,6 +27,22 @@
 <input type="submit" value="Filter"  class="btn btn-danger"/>
 </form>
 </div>
+<div class="row justify-content-center">
+    <div class="col-auto">
+<table class="table table-striped table-dark">
+<tr>
+<th scope="col">Customer Name</th>
+<th scope="col">Product Name</th>
+<th scope="col">Date</th>
+</tr>
+
+<?php
+
+?>
+
+</table>
+</div>
+  </div>
     
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
