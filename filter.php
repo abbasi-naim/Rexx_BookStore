@@ -18,6 +18,15 @@
 </header>
 
 <body>
+
+<div class="d-flex justify-content-center align-items-center container ">
+<form method="POST">
+<input type="text" name="customer_name" placeholder="Customer Name"/>
+<input type="text" name="product_name" placeholder="Product Name"/>
+<input type="text" name="sale_date" placeholder="Date"/>
+<input type="submit" value="Filter"  class="btn btn-danger"/>
+</form>
+</div>
     
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
