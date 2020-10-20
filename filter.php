@@ -77,6 +77,10 @@ function filter($filter,$conn){
     }
 }
 
+filter("customer_name",$conn);
+filter("product_name",$conn);
+filter("sale_date",$conn);
+
 ?>
 
 </table>
