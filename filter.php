@@ -38,6 +38,13 @@
 
 <?php
 
+function changeTime($str,$timezone){
+    $dt = new DateTime($str);
+$dt->setTimezone(new DateTimeZone($timezone));
+return $dt->format('Y-m-d H:i:s');
+
+}
+
 require_once("db.php");
 function filter($filter,$conn){
     $price=0;
