@@ -69,8 +69,10 @@ function filter($filter,$conn){
                 }else{
                     echo '<td>'.changeTime($row["sale_date"],"Europe/Berlin").'</td></tr>';
                 }
+
                 $price+=$row["product_price"];
             }
+            //show the total price
           echo '  <tr><td>Total Price<td>'.$price.'<td><td></tr>';
         } else {
             echo "0 results";
