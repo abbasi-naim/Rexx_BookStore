@@ -60,6 +60,7 @@ function filter($filter,$conn){
             while($row = $result->fetch_assoc()) {
                 echo '<tr><td>'.$row["customer_name"].'</td>';
                 echo '<td>'.$row["product_name"].'</td>';
+                //to convert version structure to numerical in order to compare 
                 $version=str_replace(".","",$row["version"]);
                 $version=str_replace("+","",$version);
 
